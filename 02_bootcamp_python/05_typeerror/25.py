@@ -12,5 +12,5 @@ try:
     for i in range(0, len(lista)):
         lista[i] = int(lista[i].strip())    
     print(lista)
-except:
+except ValueError:
     print("A lista deve conter apenas números")

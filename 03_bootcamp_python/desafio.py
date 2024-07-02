@@ -1,12 +1,12 @@
 const_bonus = 1000
 
-nome_valido = False
-salario_valido = False
-bonus_valido = False
+nome_valido: bool  = False
+salario_valido: bool  = False
+bonus_valido: bool = False
 
 while not nome_valido:
     try:
-        nome = input("Digite seu nome: ")
+        nome: str = input("Digite seu nome: ")
         if len(nome) == 0:
             raise ValueError("O nome não pode estar em branco")
         
@@ -28,7 +28,7 @@ while not nome_valido:
 
 while not salario_valido:
     try:
-        salario = float(input("Digite o salário: "))
+        salario: float = float(input("Digite o salário: "))
         while salario <= 0:
             try:
                 salario = float(input("O salário deve ser maior do que 0: "))
@@ -48,7 +48,7 @@ while not salario_valido:
     
 while not bonus_valido:
     try:   
-        bonus = float(input("Digite a porcentagem do bonus: "))
+        bonus: float = float(input("Digite a porcentagem do bonus: "))
 
     except TypeError:
         print("O valor digitado deve ser um número")
@@ -60,6 +60,6 @@ while not bonus_valido:
     else:
         bonus_valido = True
         print(f"valor do bonus válido: {bonus}")
-        valor_bonus = const_bonus + salario + ((salario * bonus)/100)
+        valor_bonus: float = const_bonus + salario + ((salario * bonus)/100)
 
         print(f"O salário do usuário {nome} é de: R${salario:.2f}, O  valor do bonus do usuário {nome} é igual a: R${valor_bonus:.2f}")

@@ -1,0 +1,1 @@
+# Objetivo: Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.

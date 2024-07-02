@@ -1,0 +1,1 @@
+# Objetivo: Dada uma lista de valores, dividir em duas listas: uma para valores pares e outra para ímpares.

@@ -1,0 +1,1 @@
+# Objetivo: Dado um dicionário, criar listas separadas para suas chaves e valores.

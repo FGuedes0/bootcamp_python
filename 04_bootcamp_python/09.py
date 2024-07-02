@@ -1,0 +1,1 @@
+# Objetivo: Dado um conjunto de números, calcular a média.
